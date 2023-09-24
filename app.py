@@ -8,6 +8,8 @@ app.secret_key = 'clave_secreta'
 grafo_usuarios = GrafoUsuarios()
 
 usuario1 = Usuario("usuario1@example.com", "contraseña1", "Juan", "Pérez", 30, "Hombre")
+usuario1.agregar_interes("artes")
+usuario1.agregar_interes("moda")
 usuario2 = Usuario("usuario2@example.com", "contraseña2", "María", "Gómez", 25, "Mujer")
 usuario3 = Usuario("usuario3@example.com", "contraseña3", "Carlos", "López", 28, "Hombre")
 grafo_usuarios.agregar_usuario(usuario1.correo, usuario1)
@@ -46,12 +48,14 @@ def signin():
         apellidos = request.form['apellidos']
         edad = request.form['edad']
         genero = request.form['genero']
-       
+        intereses = request.form.getlist('intereses[]')
+
         if grafo_usuarios.buscar_usuario_por_correo(username):
             error = 'El correo electrónico ya está registrado.'
             return render_template('signin.html', error=error)
             
         nuevo_usuario = Usuario(username, password, nombres, apellidos, edad, genero)
+        nuevo_usuario.intereses= intereses
         grafo_usuarios.agregar_usuario(nuevo_usuario.correo,nuevo_usuario)     
                 
         return redirect(url_for('login'))
@@ -65,7 +69,7 @@ def index():
     return render_template('index.html', user=usuario_verificado, conexiones=conexiones, recomendaciones=recomendaciones)
 
 @app.route('/agregar_amigo/<string:correo_recomendado>', methods=['POST'])
-def agregar_amigo(correo_recomendado):  
+def agregar_amigo(correo_recomendado):
 
     # Encuentra al usuario recomendado por su correo
     usuario_recomendado = grafo_usuarios.buscar_usuario_por_correo(correo_recomendado)

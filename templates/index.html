@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <h1>Bienvenido a Mi Red Social</h1>
+        <h1>Bienvenido a TSD</h1>
     </header>
 
     <nav>
@@ -35,24 +35,25 @@
             </ul>
         </section>
         <section>
-            <h2>Conexiones:</h2>
+            <h2>Seguidores:</h2>
             <ul>
                 {% for conexion in conexiones %}
                     <li>{{ conexion.nombres }} {{ conexion.apellidos }}</li>
                 {% endfor %}
             </ul>
-        </section>
+        </section>       
         <section>
             <h2>Usuarios Recomendados</h2>
             <ul>
                 {% for recomendacion in recomendaciones %}
                     <li>{{ recomendacion.nombres }} {{ recomendacion.apellidos }}</li>
                 {% endfor %}
-            </ul>
+            </ul>            
+            <p>¿Te interesa un usuario? <a href="/recomendaciones">Mandar solicitud</a></p>
         </section>
     </main>
     <footer>
-        <p>&copy; 2023 Mi Red Social</p>
+        <p>&copy; 2023 Mi The Social Dilema</p>
     </footer>
 </body>
 </html>

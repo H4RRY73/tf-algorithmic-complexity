@@ -26,7 +26,8 @@
 ### Contextualizacion
 ---
 > Cuando realizas una búsqueda en Google como 'el cambio climático es...', obtendrás resultados diversos, dependiendo de tu ubicación y de la información que Google tenga sobre tus intereses.
-- Netflix, 2020
+- Netflix, 2020.
+
 Este es el punto de partida de **The Social Dilemma**, un documental que investiga los efectos y peligros vinculados al uso de diversos servicios en línea. En este documental, se pone de relieve cómo los algoritmos utilizados pueden tener un impacto significativo en la política global, como se evidenció durante la *Primavera Árabe*. No obstante, no debemos menospreciar el impacto y la influencia personal que estos algoritmos ejercen sobre los usuarios.
 
 No es sorprendente que ***Stuart Russell***(**2021**), profesor de Inteligencia Artificial en la Universidad de California en Berkeley, expresara en una entrevista con la BBC: *El objetivo principal de estos algoritmos es mejorar la experiencia del usuario en las redes sociales, logrando recopilar la máxima cantidad de información sobre cada usuario y proporcionándoles contenido que se adapte a sus preferencias para mantenerlos conectados por más tiempo*.
@@ -79,7 +80,9 @@ Una red social con dos posibilidades de carga de contenido. Primero, carga de co
 ### Metodologia 
 ---
 > El pensamiento Lean ... tiene como objetivo garantizar el incremento del valor de un producto/servicio reduciendo el desperdicio en el proceso de creación de este, mejorando la calidad.
-- Villanueva y Vizarreta, 2022, p60
+- Villanueva y Vizarreta, 2022, p60.
+
+
 La metodologia a emplear en este trabajo sera LEAN UX, dada la intensidad, e iteracion propuestas para el desarrollo de este proyecto. Asimismo, consideramos que el enfoque solucionador de esta metodologia sera frecuentemente util.
 
 ### Tecnicas
